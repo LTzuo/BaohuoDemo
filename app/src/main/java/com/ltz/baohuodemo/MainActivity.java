@@ -11,7 +11,7 @@ import android.widget.Button;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_start;
+    private Button btn_start,btn_html;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
              startActivity(new Intent(MainActivity.this,Location_Activity.class));
+            }
+        });
+
+        btn_html = (Button) findViewById(R.id.btn_html);
+        btn_html.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,WebViewActivity.class));
             }
         });
     }

@@ -11,4 +11,12 @@
        android:layout_height="wrap_content"
        android:text="计费"
        />
+
+   <Button
+       android:id="@+id/btn_html"
+       android:layout_below="@+id/btn_start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="html"
+       />
 </RelativeLayout>
