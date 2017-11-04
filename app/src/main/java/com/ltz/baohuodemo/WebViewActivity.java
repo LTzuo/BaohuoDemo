@@ -43,7 +43,7 @@ public class WebViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web_view);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         initView();
-        webView.loadUrl("file:///android_asset/h.html");
+        webView.loadUrl("http://music.163.com/");
     }
 
     private void initView() {

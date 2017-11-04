@@ -19,4 +19,12 @@
        android:layout_height="wrap_content"
        android:text="html"
        />
+
+   <Button
+       android:id="@+id/btn_dialog"
+       android:layout_below="@+id/btn_html"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="对话框"
+       />
 </RelativeLayout>

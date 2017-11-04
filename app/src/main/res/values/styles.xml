@@ -17,4 +17,22 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
+    <!--对话框样式-->
+    <style name="dialogstyle" parent="@android:style/Theme.Dialog">
+        //设置Window背景色为透明，默认为黑色Drawable
+        <item name="android:windowBackground">@android:color/transparent</item>
+        //设置Window没有标题栏
+        <item name="android:windowNoTitle">true</item>
+        //设置背景色模糊
+        <item name="android:backgroundDimEnabled">true</item>
+        //设置Window是否悬浮在Activity之上，默认是true（设置原因看下文）
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!--dialog动画-->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/animator</item>
+    </style>
+
 </resources>
