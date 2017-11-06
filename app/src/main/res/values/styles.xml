@@ -28,6 +28,8 @@
         <item name="android:backgroundDimEnabled">true</item>
         //设置Window是否悬浮在Activity之上，默认是true（设置原因看下文）
         <item name="android:windowIsFloating">false</item>
+
+        <item name="android:gravity">center</item>
     </style>
 
     <!--dialog动画-->

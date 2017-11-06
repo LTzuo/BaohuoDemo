@@ -3,10 +3,20 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <android.support.v4.view.ViewPager
         android:id="@+id/dialogviewpager"
+        android:layout_width="250dp"
+        android:background="@color/white"
+        android:layout_height="270dp"/>
+    <net.lucode.hackware.magicindicator.MagicIndicator
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@android:color/transparent"
+        android:id="@+id/bottom_indicator"
+         />
+</FrameLayout>
 </LinearLayout>

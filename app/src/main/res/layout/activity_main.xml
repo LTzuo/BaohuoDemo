@@ -25,6 +25,6 @@
        android:layout_below="@+id/btn_html"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="弹出对话框"
+       android:text="弹出对话框实现轮播"
        />
 </RelativeLayout>

@@ -5,8 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.ltz.baohuodemo.viewpagerdialog.ViewPagerDialog;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 主页面
@@ -45,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDialog(){
-        ViewPagerDialog dialog = new ViewPagerDialog(this);
-
+        ViewPagerDialog dialog = new ViewPagerDialog(this,R.style.dialogstyle);
         dialog.show();
     }
 
