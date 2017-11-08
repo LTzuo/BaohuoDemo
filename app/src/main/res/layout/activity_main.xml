@@ -9,12 +9,19 @@
        android:id="@+id/btn_start"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="计费"
+       android:text="高德定位计费"
+       />
+   <Button
+       android:id="@+id/btn_start_baidu"
+       android:layout_below="@+id/btn_start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="百度定位计费"
        />
 
    <Button
        android:id="@+id/btn_html"
-       android:layout_below="@+id/btn_start"
+       android:layout_below="@+id/btn_start_baidu"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="html"
@@ -25,6 +32,14 @@
        android:layout_below="@+id/btn_html"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="弹出对话框实现轮播"
+       android:text="弹出对话框实现轮播1"
+       />
+
+   <Button
+       android:id="@+id/btn_dialog1"
+       android:layout_below="@+id/btn_dialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="弹出对话框实现轮播2"
        />
 </RelativeLayout>

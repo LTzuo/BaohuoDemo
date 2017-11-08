@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.ltz.baohuodemo.viewpagerdialog.ViewPagerAlertDialog;
 import com.ltz.baohuodemo.viewpagerdialog.ViewPagerDialog;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_start,btn_html,btn_dialog;
+    private Button btn_start,btn_html,btn_dialog,btn_dialog1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,18 @@ public class MainActivity extends AppCompatActivity {
                 showDialog();
             }
         });
+
+        btn_dialog1 = (Button) findViewById(R.id.btn_dialog1);
+        btn_dialog1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog1();
+            }
+        });
+    }
+
+    private void showDialog1(){
+        ViewPagerAlertDialog dialog = new ViewPagerAlertDialog(this);
     }
 
     private void showDialog(){

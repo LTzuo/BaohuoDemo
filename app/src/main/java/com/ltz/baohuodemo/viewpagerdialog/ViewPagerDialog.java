@@ -6,19 +6,14 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageView;
-
 import com.ltz.baohuodemo.R;
 import com.ltz.baohuodemo.navigator.ScaleCircleNavigator;
-
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
-
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * viewpager结合dialog，实现浮层轮播
  * Created by 1 on 2017/11/4.
@@ -56,7 +51,7 @@ public class ViewPagerDialog extends Dialog{
         setContentView(R.layout.viewpager_dialog_layout);
         init();
         setStyle();
-    }
+}
 
     private void init() {
         initView();
@@ -66,6 +61,7 @@ public class ViewPagerDialog extends Dialog{
         ViewPagerHelper.bind(indicator, mViewPager);
     }
 
+    /**初始化指示器**/
     private void initIndicator() {
         indicator=(MagicIndicator) findViewById(R.id.bottom_indicator);
         ScaleCircleNavigator navigator=new ScaleCircleNavigator(this.getContext());
@@ -100,7 +96,8 @@ public class ViewPagerDialog extends Dialog{
                     pages.add(view);
                 }
             }
-        } catch (IllegalAccessException e) {
+        }
+        catch (IllegalAccessException e) {
             e.printStackTrace();
         }
         return pages;

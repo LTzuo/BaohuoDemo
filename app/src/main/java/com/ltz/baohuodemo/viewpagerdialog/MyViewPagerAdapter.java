@@ -38,7 +38,4 @@ public class MyViewPagerAdapter extends PagerAdapter{
         container.removeView(mViewList.get(position));
     }
 
-
-
-
 }

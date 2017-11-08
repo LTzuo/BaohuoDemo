@@ -20,6 +20,7 @@ import com.amap.api.location.AMapLocationClientOption.AMapLocationMode;
 import com.amap.api.location.AMapLocationClientOption.AMapLocationProtocol;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.location.AMapLocationQualityReport;
+import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.model.LatLng;
 import com.ltz.baohuodemo.utils.Utils;
 import java.util.ArrayList;
@@ -54,7 +55,7 @@ public class Location_Activity extends CheckPermissionsActivity
 	private AMapLocationClientOption locationOption = null;
 
 	private List<LatLng> nodeList = new ArrayList<>();
-	private Double AllMileage = 0.0;//总里程
+	private Float AllMileage ;//总里程
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -274,7 +275,8 @@ public class Location_Activity extends CheckPermissionsActivity
 				 var0 = nodeList.get(nodeList.size() - 2);
 			 }
 			 if (var1 != null && var0 != null) {
-				 // float b = AMapUtils.calculateLineDistance(var0, var1);
+				  float b = AMapUtils.calculateLineDistance(var0, var1);
+				  AllMileage = AllMileage+ b;
 			 }
 		  }
 
