@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn_start_baidu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"停车场啊",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"停车场",Toast.LENGTH_SHORT).show();
             }
         });
 
