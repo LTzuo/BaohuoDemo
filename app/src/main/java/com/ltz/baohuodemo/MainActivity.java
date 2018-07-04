@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ltz.baohuodemo.viewpagerdialog.ViewPagerAlertDialog;
 import com.ltz.baohuodemo.viewpagerdialog.ViewPagerDialog;
@@ -18,7 +19,7 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_start,btn_html,btn_dialog,btn_dialog1;
+    private Button btn_start,btn_start_baidu,btn_html,btn_dialog,btn_dialog1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
              startActivity(new Intent(MainActivity.this,Location_Activity.class));
+            }
+        });
+
+        btn_start_baidu = (Button) findViewById(R.id.btn_start_baidu);
+        btn_start_baidu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this,"停车场",Toast.LENGTH_SHORT).show();
             }
         });
 
