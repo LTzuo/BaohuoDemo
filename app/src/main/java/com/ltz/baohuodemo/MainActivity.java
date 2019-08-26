@@ -5,21 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.ltz.baohuodemo.viewpagerdialog.ViewPagerAlertDialog;
 import com.ltz.baohuodemo.viewpagerdialog.ViewPagerDialog;
-
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 主页面
  */
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_start,btn_start_baidu,btn_html,btn_dialog,btn_dialog1;
+    private Button btn_start,btn_start_baidu,btn_html,btn_dialog,btn_dialog1,btn_lookvedio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btn_start_baidu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"停车场",Toast.LENGTH_SHORT).show();
+                 startActivity(new Intent(MainActivity.this,BaiduMapActivity.class));
             }
         });
 
@@ -64,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
                 showDialog1();
             }
         });
+
+
+        btn_lookvedio = (Button) findViewById(R.id.btn_lookvedio);
+        btn_lookvedio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
     }
 
     private void showDialog1(){
